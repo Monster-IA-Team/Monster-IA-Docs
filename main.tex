@@ -618,6 +618,7 @@ Poniżej znajduje się podsumowanie zaangażowania każdego z członków zespoł
     \item Przygotowanie środowiska docker
     \item Implementacja bazy danych i zewnętrznych serwisów (MinIO, MailPit)
     \item Stworzenie systemu logowania, rejestracji, odzyskiwania hasła i endpointów CRUD
+    \item Przygotowanie dokumentacji technicznej oraz instrukcji uruchomienia systemu
 \end{itemize} 
 \textbf{Plusy projektu:} 
 \begin{itemize}
@@ -633,18 +634,56 @@ Poniżej znajduje się podsumowanie zaangażowania każdego z członków zespoł
     \item Trudności w zarządzaniu zespołem wynikające z faktu, że każdy z jego członków mierzy się z innymi problemami i sytuacjami życiowymi.
 \end{itemize}
 
+\newpage
+
 \subsection{Mateusz Chimkowski}
-\textbf{Zakres prac:} \\
-\textbf{Plusy projektu:} \\
+\textbf{Zakres prac:}
+\begin{itemize}
+    \item Wymyślenie koncepcji, inicjacja projektu oraz pełnienie roli jednej z głównych osób odpowiedzialnych za logikę AI i część backendową.
+    \item Opracowanie mechaniki wyszukiwania Monsterów na podstawie przesłanego zdjęcia[cite.
+    \item Zebranie i obróbka datasetu, poprawa danych wejściowych i zdjęć oraz trenowanie modeli AI przy użyciu własnych skryptów (m.in. \texttt{train-local.py} i \texttt{train-binary.py})
+    \item Stworzenie dodatkowych projektów wchodzących w skład systemu (quiz, planner, wyszukiwarka) oraz wystawienie endpointów do zarządzania plannerami.
+    \item Praca w roli analityka danych, obejmująca porządkowanie struktury danych i poprawę danych wejściowych aplikacji.
+    \item Przygotowanie wstępnej dokumentacji projektu oraz współpraca przy optymalizacji algorytmu genetycznego.
+    \item Przygotowanie dokumentacji technicznej
+\end{itemize}
+\textbf{Plusy projektu:} 
+\begin{itemize}
+    \item Język Python potwierdził swoją wysoką skuteczność w zadaniach związanych z AI, analizą danych i szybkim prototypowaniem.
+    \item Projekt pozwolił na zdobycie cennej, praktycznej wiedzy na temat działania sieci neuronowych i uświadomił kluczowe znaczenie odpowiednio przygotowanego datasetu.
+    \item Wykazanie się dużym zaangażowaniem, samodzielnością oraz odpowiedzialnością w doprowadzaniu skomplikowanych zadań technicznych do końca.
+    \item Kreatywność w wymyśleniu koncepcji aplikacji z wykorzystaniem sztucznej inteligencji oraz znalezieniu nieszablonowych rozwiązań problemów.
+    \item Umiejętność tworzenia jasnej dokumentacji, która skutecznie posłużyła reszcie zespołu jako fundament do dalszego rozwoju projektu.
+\end{itemize}
 \textbf{Minusy/Trudności:}
+\begin{itemize}
+    \item Wnioski z pracy wskazują, że przy większym, rozbudowanym backendzie lepszym wyborem od Pythona mogłaby być technologia o ściślejszej strukturze i typowaniu, taka jak .NET.
+    \item Problemy z zależnościami i konfiguracją we wczesnej fazie projektu, wynikające z początkowego braku pliku \texttt{requirements.txt}.
+    \item Trudności w utrzymaniu i debugowaniu kodu w miarę wzrostu projektu z powodu niedostatecznego dzielenia klas i większych fragmentów na osobne pliki.
+    \item Zbyt duże poleganie na gotowych materiałach zdjęciowych, co pokazało, jak ważna dla skuteczności modelu jest pełna kontrola nad jakością własnego datasetu.
+    \item Braki w znajomości niektórych zaawansowanych praktyk czystego kodu i architektury, co w połączeniu z szybkim tempem pracy utrudniało łatwe rozwijanie aplikacji.
+    \item Skłonność do modyfikowania założeń projektu i testowania nowych pomysłów w trakcie implementacji, co utrudniało stabilne prowadzenie prac i planowanie.
+    \item Ograniczona dostępność czasowa zmuszająca zespół do lepszego i z dużym wyprzedzeniem planowania komunikacji oraz terminów.
+    \item Niedobór testów automatycznych, przez co poprawność działania funkcji często trzeba było sprawdzać ręcznie, co zwiększało ryzyko błędów po wprowadzeniu poprawek.
+\end{itemize}
 
 \subsection{Szymon Mikołajek}
-\textbf{Zakres prac:} Frontend w React, budowa UI i UX, podłączenie API \\
-\textbf{Plusy projektu:} \\
+\textbf{Zakres prac:}
+\begin{itemize}
+    \item Przygotowanie dokumentacji technicznej
+    \item Przygotonie części warstywy frontendowej (React) oraz endpointów backendowych do zarządzania Monsterami (CRUD)
+    \item Przygotowanie makiety UI/UX oraz współpraca przy budowie interfejsu użytkownika
+\end{itemize}
+\textbf{Plusy projektu:} 
 \textbf{Minusy/Trudności:}
 
 \subsection{Paweł Kruk}
-\textbf{Zakres prac:} Frontend w React, budowa UI i UX, podłączenie API \\
+\textbf{Zakres prac:}
+\begin{itemize}
+    \item Przygotowanie dokumentacji technicznej
+    \item Przygotonie części warstywy frontendowej (React) oraz endpointów backendowych do zarządzania Monsterami (CRUD)
+    \item Przygotowanie makiety UI/UX oraz współpraca przy budowie interfejsu użytkownika
+\end{itemize}
 \textbf{Plusy projektu:} 
 \begin{itemize}
     \item Sprawne wdrożenie Reacta w połączeniu z TypeScriptem, co znacząco usprawniło budowę interfejsu i ułatwiło zarządzanie stanem całej aplikacji.
@@ -659,9 +698,28 @@ Poniżej znajduje się podsumowanie zaangażowania każdego z członków zespoł
 \end{itemize}
 
 \subsection{Bartosz Dobroś}
-\textbf{Zakres prac:}  \\
-\textbf{Plusy projektu:} \\
+\textbf{Zakres prac:}
+\begin{itemize}
+    \item Rozbudowa backendu projektu.
+    \item Budowa algorytmu odpowiadającego za tworzenie plannera.
+    \item Budowa funkcjonalności admina od strony backendu.
+    \item Przygotowanie potencjalnego alternatywnego algorytmu rozpoznawania zdjęć (ostatecznie niewykorzystanego).
+    \item Sporządzenie dokumentu-raportu ze spotkania zespołów.
+\end{itemize}
+\textbf{Plusy projektu:}
+\begin{itemize}
+    \item Praca nad większym systemem wykorzystującym algorytmy – przeniesienie dotychczasowej teorii w praktykę.
+    \item Zapoznanie się poprzez praktykę z typowym modelem pracy w firmach.
+    \item Rozwinięcie kompetencji pracy w nowym zespole.
+    \item Pierwsze doświadczenie z tzw. „code-review” oraz możliwość zobaczenia oceny swojego kodu przed wdrożeniem go do produkcji.
+    \item Rozwinięcie ogólnej wiedzy technicznej oraz umiejętności interpersonalnych.
+\end{itemize}
 \textbf{Minusy/Trudności:}
+\begin{itemize}
+    \item Potencjalna wymiana projektami budziła początkowo małe zainteresowanie własnym, oryginalnym projektem.
+    \item Niechęć do wymiany ze względu na nieadekwatny poziom zaawansowania oraz wymaganą ilość pracy w niektórych przedstawionych projektach.
+    \item Nieadekwatna liczba końcowych punktów ECTS w stosunku do włożonego wkładu pracy, co budziło pewne osobiste niezadowolenie.
+\end{itemize}
 
 \newpage
 \renewcommand{\lstlistlistingname}{Spis fragmentów kodu}
